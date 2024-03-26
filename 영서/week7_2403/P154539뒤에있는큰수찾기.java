@@ -2,7 +2,7 @@ package week7_2403;
 
 import java.util.*;
 
-public class P154539_뒤에있는큰수찾기 {
+public class P154539뒤에있는큰수찾기 {
     class Solution {
         public int[] solution(int[] numbers) {
             int[] answer = new int[numbers.length];

@@ -1,9 +1,8 @@
 package week8_2403;
 
 import java.util.*;
-import java.io.*;
 
-public class P192334_신고결과받기_240325 {
+public class P192334신고결과받기_240325 {
     class Solution {
         public int[] solution(String[] id_list, String[] report, int k) {
             int num = id_list.length;

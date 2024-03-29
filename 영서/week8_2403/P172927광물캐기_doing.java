@@ -21,7 +21,7 @@ public class P172927광물캐기_doing {
             }
             for(int i=0;i<5;i++){
                 int thisIdx = idx+i;
-                if(thisIdx>=minerals.length){
+                if(thisIdx>=minerals.length){//더 캘 광물이 없을 때,
                     flag=true;
                     answer= Math.min(answer,fatigue);
                     continue;

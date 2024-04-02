@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class P133502햄버거만들기 {
     public int solution(int[] ingredient) {
         int answer = 0;
         boolean flag = true;

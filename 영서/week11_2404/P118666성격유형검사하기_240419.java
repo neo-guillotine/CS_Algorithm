@@ -57,5 +57,4 @@ public class P118666성격유형검사하기_240419 {
             return answer;
         }//solution
     }//class
-
 }

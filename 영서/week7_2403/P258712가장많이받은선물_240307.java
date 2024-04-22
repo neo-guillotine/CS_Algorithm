@@ -1,7 +1,8 @@
-import java.io.*;
+package week7_2403;
+
 import java.util.*;
 
-class Solution {
+class P258712가장많이받은선물_240307 {
     public int solution(String[] friends, String[] gifts) {
         int answer = 0;
         int[][]graph = new int[friends.length][friends.length];

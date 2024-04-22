@@ -1,6 +1,6 @@
 package week7_2403;
 
-public class P140108_문자열나누기_240309 {
+public class P140108문자열나누기_240309 {
     public int solution(String s) {
         int answer = 0;
         char first=s.charAt(0);

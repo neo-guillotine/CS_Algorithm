@@ -1,4 +1,4 @@
-package week8_2403;
+package week08_2403;
 import java.util.*;
 
 public class P250137_붕대감기_240311 {

@@ -1,4 +1,4 @@
-package week9_2403;
+package week09_2403;
 import java.util.*;
 public class P17682다트게임_240329 {
     class Solution {

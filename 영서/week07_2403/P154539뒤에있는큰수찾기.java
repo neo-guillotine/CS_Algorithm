@@ -1,4 +1,4 @@
-package week7_2403;
+package week07_2403;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package week7_2403;
+package week07_2403;
 
 public class P140108문자열나누기_240309 {
     public int solution(String s) {

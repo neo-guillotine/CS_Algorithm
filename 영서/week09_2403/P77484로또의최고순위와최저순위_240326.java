@@ -1,4 +1,4 @@
-package week9_2403;
+package week09_2403;
 
 public class P77484로또의최고순위와최저순위_240326 {
     class Solution {

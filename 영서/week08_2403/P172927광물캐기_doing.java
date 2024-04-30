@@ -1,4 +1,4 @@
-package week8_2403;
+package week08_2403;
 
 public class P172927광물캐기_doing {
     class Solution {

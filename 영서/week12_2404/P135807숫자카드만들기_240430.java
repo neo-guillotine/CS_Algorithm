@@ -1,7 +1,49 @@
 package week12_2404;
-import java.util.*;
-public class P135807숫자카드만들기_doing {
+
+public class P135807숫자카드만들기_240430 {
+    //최대공약수 구하는 법 서칭함....ㅠ
     class Solution {
+        int answer;
+        public int solution(int[] arrayA, int[] arrayB) {
+            answer =0;
+            int gcdA=arrayA[0];
+            int gcdB=arrayB[0];
+            for(int i=1;i<arrayA.length;i++){
+                gcdA=gcd(gcdA,arrayA[i]);
+                gcdB=gcd(gcdB,arrayB[i]);
+            }
+
+            check(arrayA,gcdB);
+            check(arrayB,gcdA);
+            return answer;
+        }//method
+
+        int gcd(int a,int b){
+            while(b!=0){
+                int tmp = b;
+                b=a%b;
+                a=tmp;
+            }
+            return a;
+        }
+
+        void check(int[]array, int gcd){
+            boolean flag=true;
+            for(int j:array){//array에서 1개 뽑아서 나눠지면 flag false로 바꾸고 빠져나가기.
+                if(j%gcd==0){
+                    flag=false;
+                    break;
+                }
+            }
+            //나눠지지 않은 경우, max값 비교하기
+            if(flag){
+                answer = Math.max(gcd,answer);
+                return;
+            }
+        }
+    }//class
+
+/*    class Solution {
         HashSet<Integer>set;
         int answer;
         public int solution(int[] arrayA, int[] arrayB) {
@@ -75,4 +117,6 @@ public class P135807숫자카드만들기_doing {
             }
         }
     }//class
+ 
+ */
 }

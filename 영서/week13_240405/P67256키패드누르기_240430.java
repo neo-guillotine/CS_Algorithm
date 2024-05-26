@@ -1,4 +1,4 @@
-package week12_2404;
+package week13_240405;
 import java.util.*;
 public class P67256키패드누르기_240430 {
     class Solution {

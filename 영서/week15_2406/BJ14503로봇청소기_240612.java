@@ -6,13 +6,15 @@ public class BJ14503로봇청소기_240612 {
     //dir 0북 1동 2남 3서
     static int dir, map[][],N,M,sr,sc,count;
     //후진 기준으로 0부터 3까지!
-    static int[][]move = {{-1,0},{0,1},{0,1},{0,-1}};
+    static int[][]move = {{-1,0},{0,1},{1,0},{0,-1}};
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
+
+        st = new StringTokenizer(br.readLine());
         sr = Integer.parseInt(st.nextToken());
         sc = Integer.parseInt(st.nextToken());
         dir = Integer.parseInt(st.nextToken());
@@ -63,23 +65,32 @@ public class BJ14503로봇청소기_240612 {
                 nc = c+move[dir][1];
             }///while
 
-        //////?
-        }else{
+            if(0<=nr && nr<N && 0<=nc && nc<M && map[nr][nc]==0){
+                map[nr][nc]=2;
+                count++;
 
+                clean(nr,nc,dir);
+            }
+        //////?
+        }else{///모두 깨끗하면 후진하기!
+            int nr = r - move[dir][0];
+            int nc = c - move[dir][1];
+            if(0<=nr && nr<N && 0<=nc && nc<M  && map[nr][nc]!=1){
+                clean(nr,nc,dir);
+            }
         }
 
     }
 
 
     static class Point{
-        int r, c, dir;
-        public Point(int r, int c,int dir){
+        int r, c;
+        public Point(int r, int c){
             this.r = r;
             this.c = c;
-            this.dir = dir;
         }
         public String toString(){
-            return "r="+r+"  &c="+c+" &dir"+dir;
+            return "r="+r+"  &c="+c;
         }
     }
 }///class

@@ -2,7 +2,7 @@ package week15_2406;
 
 import java.util.*;
 import java.io.*;
-public class BJ14503로봇청소기_240612 {
+public class BJ14503로봇청소기_solution {
     //dir 0북 1동 2남 3서
     static int dir, map[][],N,M,sr,sc,count;
     //후진 기준으로 0부터 3까지!

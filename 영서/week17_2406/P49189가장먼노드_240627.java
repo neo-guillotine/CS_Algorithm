@@ -22,7 +22,7 @@ public class P49189가장먼노드_240627 {
                 map[n2][n1]=true;
             }
 
-            //2. bfs로 돌리면서 n이 가장 큰 값 찾기
+            //2. bfs로 돌리면서 마지막 q가 돌 때, 해당 개수 구하기
             q.add(1);
             visited[1]=true;
 

@@ -1,6 +1,6 @@
 package week13_240405;
 
-public class P135807숫자카드만들기_240430 {
+public class P135807숫자카드나누기_240430 {
     //최대공약수 구하는 법 서칭함....ㅠ
     class Solution {
         int answer;

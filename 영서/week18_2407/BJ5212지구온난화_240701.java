@@ -1,4 +1,4 @@
-package week17_2407;
+package week18_2407;
 import java.util.*;
 public class BJ5212지구온난화_240701 {
     //updatedMap 새로 그리기. 한줄이 다 .이면 없애기
